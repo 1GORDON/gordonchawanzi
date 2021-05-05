@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title id="title">
+            <h1>Survey Form</h1>
+        </title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <p id="description"> Thank you, for visiting this survey page.</p>
+        <form action="" id="survey-form">
+            <label id="name-label" for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name"><br>
+            
+            <label id="email-label" for="email">Email:</label><br>
+            <input type="text" id="email" name="email" placeholder="Email address"><br>
+            
+            <label id="number-label" for="number">Number:</label><br>
+            <input type="text" id="number" name="number" placeholder="Number"><br>
+            <br>
+            <label for="drinks">Choose a drink:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="water">Water</option>
+                <option value="wine">Wine</option>
+                <option value="beer">Beer</option>
+                <option value="juice">Fresh juice</option>
+            </select>
+            <br><br>
+
+            <label for="temperature">Prefered temperature:</label><br>
+            <input type="radio" id="warm" name="temperature" value="warm">
+            <label for="warm">Warm</label><br>
+            <input type="radio" id="room-temperature" name="temperature" value="room-temperature">
+            <label for="room-temperature">Room Temperature</label><br>
+            <input type="radio" id="cold" name="temperature" value="cold">
+            <label for="cold">Cold</label>
+            <br><br>
+
+            <label for="vessel">Prefered vessel:</label><br>
+            <input type="checkbox" id="vessel1" name="vessel1" value="Bottle">
+            <label for="vessel1"> A Bottle</label><br>
+            <input type="checkbox" id="vessel2" name="vessel2" value="Glass">
+            <label for="vehicle2"> A Glass</label><br>
+            <br>
+
+            <textarea name="comment">Enter your comment here...</textarea><br>
+    
+            <br><input type="submit" value="Submit">
+
+
+      </form> 
+      
     </body>
 </html>
